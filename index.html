@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>movies</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="412206635_697132459231850_9118274465722874054_n-removebg-preview.png" alt="Your Image Description">
+      </div>
+    </header>
+    <div class="popup-overlay" id="popup-overlay"></div>
+    <div class="movie-popup" id="movie-popup">
+      <button onclick="closeMoviePopup()" class="close-button"> ←</button>
+      <div id="popup-container"></div>
+      <p>&zwnj;</p>
+      <p>&zwnj;</p>
+      <h3>Related Movies</h3>
+      <div class="related-movies" id="related-movies"></div>
+    </div>
+    <div class="search-movie-popup" id="search-movie-popup">
+      <h1> RESULTS FOR  <span id="search-query"></span></h1>
+      <button onclick="closeSearchMoviePopup()" class="close-button">←</button>
+      <div class="search-results" id="search-results"></div>
+    </div>
+    <div>
+      <form class="search" id="search">
+        <input type="text" id="search-input" />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <p>&zwnj;</p>
+    <p>&zwnj;</p>
+    <p>&zwnj;</p>
+    <p>&zwnj;</p>
+
+    <div>
+      <img class="positioned-image" src="412466900_1539012170193400_5409345651195087478_n-removebg-preview.png" alt="Your Image Description">
+    </div>
+    <div class="movies" id="movies"></div>
+
+    <div class="footer">
+      <button onclick="seeMoreMovies()">VIEW MORE &rarr;</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
